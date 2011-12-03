@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<style type="text/css">
+			ul{margin:0 0 10px;padding:0;list-style-type:none}
+			ul li label{margin:0 5px}
+		</style>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
+		<script type="text/javascript" src="jquery.cbfilter-0.1.js"></script>
+		<script type="text/javascript">
+			jQuery(function($){
+				$('#cbs').checkboxfilter({
+					elements:{
+						'1000':['1'],
+						'1001':['2','3'],
+						'1002':['2','3'],
+						'1003':['4']
+					},
+					menu:{
+						'Menu 1':{
+							'1':'Categoria 1',
+							'2':'Categoria 2'
+						},
+						'Menu 2':{
+							'3':'Categoria 3',
+							'4':'Categoria 4'
+						}
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="cbs"></div>
+	</body>
+</html>
